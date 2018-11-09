@@ -1,0 +1,21 @@
+<html>
+<head>
+	<script type="text/javascript" src="./src/calcs.js"></script>
+	<script type="text/javascript" src="./src/selectors.js"></script>
+	<script type="text/javascript" src="./src/lib/underscore-min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<h1>שיפועים ונהנים</h1>
+	<div id='incline-section'>
+		<div class='height'>גובה: <input type="text" name="height"></div>
+		<div class='length'>אורך: <input type="text" name="length"></div>
+		<div class='incline-precentage'>אחוז שיפוע: <input type="text" name="incline-precentage"></div>
+		<button class="calc" onclick="window.calcInclineSection()">חשב</button>
+
+		<div class='err'></div>
+	</div>
+</body>
+</html>
