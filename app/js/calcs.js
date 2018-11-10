@@ -62,6 +62,11 @@
 		showResult({ sectionSelector, result });
 	});
 
+	$('input').on('keypress', (event)=> {
+        if(event.which === 13){
+            $(".active .calc").click();
+        }
+	});
 
 	function isInclineValid(incline) {
 		if (!isNumber(incline)) {
