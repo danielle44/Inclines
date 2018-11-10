@@ -41,6 +41,28 @@
 		showResult({ sectionSelector, result });
 	});
 
+	$(".height-lines-section .calc").on("click", function() {
+		window.clearErrorAndResults();
+		var sectionSelector = '.height-lines-section';
+		var heightGap = $(sectionSelector + " .height-gap input").val();
+		var incline = $(sectionSelector + " .incline input").val();
+
+		if (!isNumber(heightGap)) {
+			showError('הערכים צריכים להיות מספרים');
+			return;
+		}
+
+		var inclineValidation = isInclineValid(incline);
+		if (!inclineValidation.isValid) {
+			showError(inclineValidation.errMsg);
+			return;	
+		}
+
+		var result = calcHightLinesDistance({ heightGap, incline });
+		showResult({ sectionSelector, result });
+	});
+
+
 	function isInclineValid(incline) {
 		if (!isNumber(incline)) {
 			return { isValid: false, errMsg: 'הערכים צריכים להיות מספרים' };
@@ -52,13 +74,17 @@
 
 		return { isValid: true };
 	}
-	
+
 	function calcHeight({ length, incline }) {
 		return incline / 100 * length;
 	}
 
 	function calcLength({ height, incline }) {
 		return 100 / incline * height
+	}
+
+	function calcHightLinesDistance({ heightGap, incline }) {
+		return heightGap / incline * 100;
 	}
 
 	function showResult({ sectionSelector, result }) {

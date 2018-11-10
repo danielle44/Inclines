@@ -5,6 +5,8 @@
 		clearSection(".height-section");
 		clearSection(".length-section");
 		clearSection(".height-lines-section");
+
+		setDefaultValues();
 	};
 
 	window.clearErrorAndResults = function() {
@@ -20,6 +22,12 @@
 		$('.result').each(function() {
 			$(this).text('0');
 		});
+	}
+
+	function setDefaultValues() {
+		$('.height-gap input').each(function() {
+			$(this).val('0.1');
+		})
 	}
 
 	function clearSection(sectionSelector) {
