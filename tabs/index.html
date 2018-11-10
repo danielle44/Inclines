@@ -5,10 +5,9 @@
   <title>Adaptive tabs</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
   
-  
       <link rel="stylesheet" href="css/tabs.css">
-      <link rel="stylesheet" href="css/content.css">
       <link rel="stylesheet" href="css/messages.css">
+      <link rel="stylesheet" href="css/forms.css">
   
 </head>
 
@@ -25,54 +24,93 @@
 	<ul class="tab__content">
 		<li class="active">
 			<div class="content__wrapper">
-				<div class="post-container height-section">                
-				    <div class="post-thumb">
+				<div class="post-container height-section section">                
+				    <div class="post-thumb left">
 				    	<img src="img/incline.png"/>
 				    </div>
 
-				    <div class="post-content">
+
+				    <div class="post-content right">
 				        <h3 class="post-title">גובה הקיר: <span class='result'>0</span> מטרים</h3>
 				        <div>
-							<div class='length'><input type="text">אורך המסלול במטרים</div>
-							<div class='incline'><input type="text"> אחוז שיפוע</div>
-							<button class="calc">חשב</button>
+							<div class="floating-form">
+							    <div class="floating-label length">      
+							      <input class="floating-input" type="text" placeholder=" ">
+							      <span class="highlight"></span>
+							      <label>אורך המסלול במטרים</label>
+							    </div>
+
+							    <div class="floating-label incline">      
+							      <input class="floating-input" type="text" placeholder=" ">
+							      <span class="highlight"></span>
+							      <label>אחוז שיפוע</label>
+							    </div>
+
+							    <button class="calc">חשב</button>
+							   
+							</div>
 				        </div>
-				    </div>
+				    </div>				    
 				</div>
 			</div>
 		</li>
 		<li>
 			<div class="content__wrapper">
-				<div class="post-container length-section">                
-				    <div class="post-thumb">
+				<div class="post-container length-section section">                
+				    <div class="post-thumb left">
 				    	<img src="img/incline.png"/>
 				    </div>
-				    
-				    <div class="post-content">
+
+				    <div class="post-content right">
 				        <h3 class="post-title">אורך המסלול: <span class='result'>0</span> מטרים</h3>
 				        <div>
-							<div class='height'><input type="text">גובה הקיר במטרים</div>
-							<div class='incline'><input type="text"> אחוז שיפוע</div>
-							<button class="calc">חשב</button>
+							<div class="floating-form">
+							    <div class="floating-label height">      
+							      <input class="floating-input" type="text" placeholder=" ">
+							      <span class="highlight"></span>
+							      <label>גובה הקיר במטרים</label>
+							    </div>
+
+							    <div class="floating-label incline">      
+							      <input class="floating-input" type="text" placeholder=" ">
+							      <span class="highlight"></span>
+							      <label>אחוז שיפוע</label>
+							    </div>
+
+							    <button class="calc">חשב</button>
+							   
+							</div>
 				        </div>
-				    </div>
-				    </div>
+				    </div>				    
 				</div>
 			</div>
 		</li>
 		<li>
 			<div class="content__wrapper">
-				<div class="post-container height-lines-section">                
-				    <div class="post-thumb">
+				<div class="post-container height-lines-section section">                
+				    <div class="post-thumb left">
 				    	<img src="img/heightLines.png"/>
 				    </div>
 				    
-				    <div class="post-content">
+				    <div class="post-content right">
 				        <h3 class="post-title">מרחק קווי גובה: <span class='result'>0</span> מטרים</h3>
 				        <div>
-							<div class='height-gap'><input type="text"> הפרש גבהים במטרים</div>
-							<div class='incline'><input type="text"> אחוז שיפוע</div>
-							<button class="calc">חשב</button>
+							<div class="floating-form">
+							    <div class="floating-label height-gap">      
+							      <input class="floating-input" type="text" placeholder=" ">
+							      <span class="highlight"></span>
+							      <label>הפרש גבהים במטרים</label>
+							    </div>
+
+							    <div class="floating-label incline">      
+							      <input class="floating-input" type="text" placeholder=" ">
+							      <span class="highlight"></span>
+							      <label>אחוז שיפוע</label>
+							    </div>
+
+							    <button class="calc">חשב</button>
+							   
+							</div>
 				        </div>
 				    </div>
 				</div>
