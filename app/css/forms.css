@@ -20,6 +20,7 @@
 
 .post-content .post-title {
   flex: 1;
+  padding-bottom: 40px;
 }
 
 .post-content .post-items {
@@ -51,7 +52,7 @@ button.calc {
 /****  floating-Lable style start ****/
 .floating-label { 
   position:relative; 
-  margin-bottom:20px; 
+  margin-bottom:40px; 
 }
 .floating-input , .floating-select {
   font-size:14px;
